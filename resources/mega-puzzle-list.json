@@ -1,0 +1,673 @@
+[
+    {
+        "type": "GeneralPhrase",
+        "phrase": "What do boobs and model trains have in common? They're meant for kids but are primarily played with by grown men."
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "One does not simply walk into Mordor",
+        "source_type": "Film",
+        "character_name": "Boromir",
+        "source": "Lord of the Rings: The Fellowship of the Ring ,Film)",
+        "year_published": 2001
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "greater good? I am your wife! I'm the greatest good you are ever gonna get!",
+        "source_type": "Film",
+        "character_name": "Frozone's Wife",
+        "source": "The Incredibles",
+        "year_published": 2004
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "I feel the need - the need for speed!",
+        "source_type": "Film",
+        "character_name": "Pete Mitchell",
+        "source": "Top Gun",
+        "year_published": 1986
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Why don't you make like a tree and get outta here",
+        "source_type": "Film",
+        "character_name": "Biff Tannen",
+        "source": "Back to The Future Part II",
+        "year_published": 1989
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "I love the smell of napalm in the morning",
+        "source_type": "Film",
+        "character_name": "Colonel Bill Kilgore",
+        "source": "Apocalypse Now",
+        "year_published": 1979
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "I am a nice shark, not a mindless eating machine. If I am to change this image, I must first change myself. Fish are friends, not food.",
+        "source_type": "Film",
+        "character_name": "Bruce",
+        "source": "Finding Nemo",
+        "year_published": 2003
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Fear is the path to the dark side. Fear leads to anger, anger leads to hate, hate leads to suffering.",
+        "source_type": "Film",
+        "character_name": "Yoda",
+        "source": "Episode I: The Phantom Menace",
+        "year_published": 1999
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
+        "source_type": "Film",
+        "character_name": "Anakin Skywalker",
+        "source": "Episode II: Attack of The Clones",
+        "year_published": 2002
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "If I had a nickel for every time, I'd have two nickels. Which isn't a lot, but it's weird that it happened twice",
+        "source_type": "Film",
+        "character_name": "Dr. Doofenshmirtz",
+        "source": "Phineas and Ferb the Movie: Across the 2nd Dimension",
+        "year_published": 2011
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Hello, my name is Inigo Montoya. You killed my father. Prepare to die.",
+        "source_type": "Film",
+        "character_name": "Inigo Montoya",
+        "source": "The Princess Bride",
+        "year_published": 1987
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Remember, Red, hope is a good thing, maybe the best of things, and no good thing ever dies.",
+        "source_type": "Film",
+        "character_name": "Andy Dufresne",
+        "source": "The Shawshank Redemption",
+        "year_published": 1994
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "There is no Easter Bunny, There is no Tooth Fairy, and there is no queen of England.",
+        "source_type": "Film",
+        "character_name": "Tighten",
+        "source": "Megamind",
+        "year_published": 2010
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Life is like a box of chocolates... You never know what you're gonna get.",
+        "source_type": "Film",
+        "character_name": "Forrest Gump",
+        "source": "Forrest Gump",
+        "year_published": 1994
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "This isn't flying, this is falling with style!",
+        "source_type": "Film",
+        "character_name": "Buzz Lightyear",
+        "source": "Toy Story",
+        "year_published": 1995
+    },
+    {
+        "type": "SongLyrics",
+        "lyrics": "Never gonna give you up, never gonna let you down",
+        "artist": "Rick Astley",
+        "title": "Never Gonna Give You Up",
+        "year": 1987
+    },
+    {
+        "type": "GeneralPhrase",
+        "phrase": "A dyslexic man walks into a bra"
+    },
+    {
+        "type": "GeneralPhrase",
+        "phrase": "It doesn't matter if you're tall or short, thin or fat, rich or poor, at the end of the day, it's night."
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "You either die a hero, or you live long enough to see yourself become the villain.",
+        "source_type": "Film",
+        "character_name": "Commissioner Gordon",
+        "source": "The Dark Knight",
+        "year_published": 2008
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "There's no place like home. There's no place like home. There's no place like home.",
+        "source_type": "Film",
+        "character_name": "Dorothy Gale",
+        "source": "Wizard of Oz",
+        "year_published": 1939
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "They may take our lives, but they'll never take our freedom!",
+        "source_type": "Film",
+        "character_name": "William Wilberforce",
+        "source": "Braveheart",
+        "year_published": 1995
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "You miss 100% of the shots you don't take",
+        "speaker": "Wayne Gretzky"
+    },
+    {
+        "type": "GeneralPhrase",
+        "phrase": "The quick brown fox jumps over the lazy brown dog"
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "You want forgiveness? Get religion.",
+        "source_type": "Film",
+        "character_name": "Eddie Brock",
+        "source": "SPIDER-MAN 3",
+        "year_published": 2007
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Good morning, and in case I don't see ya, good afternoon, good evening, and good night!",
+        "source_type": "Film",
+        "character_name": "Truman Burbank",
+        "source": "The Truman Show",
+        "year_published": 1998
+    },
+    {
+        "type": "SongLyrics",
+        "lyrics": "Hello from the other side I must've called a thousand times To tell you I'm sorry for everything that I've done But when I call, you never seem to be home",
+        "artist": "Adele",
+        "title": "Hello",
+        "year": 2015
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Toby is in HR, which technically means he works for corporate, so he's really not a part of our family. Also, he's divorced, so he's really not a part of his family either.",
+        "source_type": "Sitcom",
+        "character_name": "Michael Scott",
+        "source": "The Office",
+        "year_published": 2005
+    },
+    {
+        "type": "GeneralPhrase",
+        "phrase": "The toothbrush was invented in West Virginia. Otherwise it would have been called the teethbrush."
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "Not all those who wander are lost, Bilbo Baggins.",
+        "source_type": "Novel",
+        "character_name": "Gandalf",
+        "source": "The Hobbit",
+        "year_published": 1937
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "There are only two things I can't stand in this world. People who are intolerant of other people's cultures. and the Dutch.",
+        "source_type": "Film",
+        "character_name": "Nigel Powers",
+        "source": "Austin Powers in Goldmember",
+        "year_published": 2002
+    },
+    {
+        "type": "CharacterQuote",
+        "quote": "I'm not superstitious, but I am a little stitious.",
+        "source_type": "Sitcom",
+        "character_name": "Michael Scott",
+        "source": "The Office",
+        "year_published": 2007
+    },
+    {
+        "type": "FamousDocumentQuote",
+        "quote": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
+        "speaker": "Abraham Lincoln",
+        "source": "The Gettysburg Address",
+        "year_published": 1863
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "You shouldn't believe everything you see on the internet.",
+        "speaker": "Abraham Lincoln"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Give a man a fish and you feed him for a day. Teach a man to fish and you feed him for a lifetime.",
+        "speaker": "Lao Tzu"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Put your shoulder to the wheel.",
+        "speaker": "Aesop"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Oh farmers, pray that your summers be wet and your winters clear.",
+        "speaker": "Virgil"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Hath not the potter power over the clay, to make one vessel unto honor, and another unto dishonor?",
+        "speaker": "The Bible, Romans"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "If you chase two rabbits, you will lose them both.",
+        "speaker": "Native American Saying"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Nature herself has imprinted on the minds of all the idea of God.",
+        "speaker": "Cicero"
+    },
+    {
+        "type": "GeneralPhrase",
+        "phrase": "You can't direct the wind, but you can adjust your sails."
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The man who moves a mountain begins by carrying away small stones.",
+        "speaker": "Confucius"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Blessed shall be the fruit of thy cattle, the increase of thy kine, and the flocks of thy sheep.",
+        "speaker": "The Bible, Deut. 28:4"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Do not throw the arrow which will return against you.",
+        "speaker": "Kurdish Proverb"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Meditation brings wisdom; lack of meditation leaves ignorance. Know well what leads you forward and what holds you back.",
+        "speaker": "The Buddha"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Not at all similar are the race of the immortal gods and the race of men who walk upon the earth.",
+        "speaker": "Homer"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "It is from their foes, not their friends, that cities learn the lesson of building high walls.",
+        "speaker": "Aristophanes"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "If you speak the truth, have a foot in the stirrup.",
+        "speaker": "Turkish Proverb"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The Lord bless you and keep you; the Lord make His face to shine upon you and be gracious to you; the Lord lift up His countenance upon you and give you peace.",
+        "speaker": "The Bible, Numbers"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I am the Lord thy God. Thou shalt have no other gods before Me.",
+        "speaker": "The Bible, Exodus"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "It is entirely seemly for a young man killed in battle to lie mangled by the bronze spear. In his death all things appear fair.",
+        "speaker": "Homer"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "True glory consists in doing what deserves to be written; in writing what deserves to be read.",
+        "speaker": "Pliny the Elder"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "And them that take the sword shall perish by the sword.",
+        "speaker": "The Bible, Matthew"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "You should hammer your iron when it is glowing hot.",
+        "speaker": "Publius Syrus"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Words have the power to both destroy and heal. When words are both true and kind, they can change our world.",
+        "speaker": "The Buddha"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "If in other sciences we should arrive at certainty without doubt and truth without error, it behooves us to place the foundations of knowledge in mathematics.",
+        "speaker": "Roger Bacon"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "A multitude of rulers is not a good thing. Let there be one ruler, one king.",
+        "speaker": "Herodotus ,Although, this sentence can be found at Homer's Iliad, in a speech from Ulysses)"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The wisest men follow their own direction.",
+        "speaker": "Euripides"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Some books are to be tasted, others to be swallowed, and some few to be chewed and digested.",
+        "speaker": "Sir Francis Bacon"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "For everything there is a season and a time for every purpose under heaven.",
+        "speaker": "Ecclesiastes"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "And on the pedestal these words appear: 'My name is Ozymandias, king of kings: Look on my works, ye Mighty, and despair!'",
+        "speaker": "Percy Bysshe Shelley"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Everything is worth what its purchaser will pay for it.",
+        "speaker": "Publius Syrus"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "A god from the machine",
+        "speaker": "Menander"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "All the world's a stage, And all the men and women merely players. They have their exits and their entrances; And one man in his time plays many parts. ",
+        "speaker": "William Shakespeare"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.",
+        "speaker": "Antoine de Sain,Exupery"
+    },
+    {
+        "type": "SongLyrics",
+        "lyrics": "Hello from the other side I must've called a thousand times To tell you I'm sorry for everything that I've done But when I call, you never seem to be home",
+        "artist": "Adele",
+        "title": "Hello",
+        "year": 2015
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "To bring about the rule of righteousness in the land, so that the strong should not harm the weak.",
+        "speaker": "Hammurabi's Code; Prologue"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I will to my lord be true and faithful, and love all which he loves and shun all which he shuns.",
+        "speaker": "Anglo Saxon Oath of Fealty"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "One doesn't discover new lands without losing sight of the shore.",
+        "speaker": "Andre Gide"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "If music be the food of love, play on.",
+        "speaker": "William Shakespeare"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I have gained this by philosophy: that I do without being commanded what others do only from fear of the law.",
+        "speaker": "Aristotle"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The bureaucracy is expanding to meet the needs of the expanding bureaucracy",
+        "speaker": "Unknown"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Two cities have been formed by two loves: the earthly by the love of self; the heavenly by the love of God.",
+        "speaker": "St. Augustine"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "People of the same trade seldom meet together, even for merriment and diversion, but the conversation ends in a conspiracy against the public.",
+        "speaker": "Adam Smith"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I am the state.",
+        "speaker": "Louiz XIV"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I cannot live without books",
+        "speaker": "Thomas Jefferson"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Banking establishments are more dangerous than standing armies.",
+        "speaker": "Thomas Jefferson"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "A man does not have himself killed for a half-pence a day or for a petty distinction. You must speak to the soul in order to electrify him.",
+        "speaker": "Napoleon Bonaparte"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "What gunpowder did for war, the printing press has done for the mind.",
+        "speaker": "Wendell Phillips"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "There is no wealth like knowledge, no poverty like ignorance.",
+        "speaker": "Ali ibn Abi Talib"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
+        "speaker": "Sun Tzu"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "No freeman shall be taken, imprisoned, or in any other way destroyed, except by the lawful judgment of his peers.",
+        "speaker": "The Magna Carta]"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The whole is more than the sum of its parts.",
+        "speaker": "Aristotle"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Any society that would give up a little liberty to gain a little security will deserve neither and lose both.",
+        "speaker": "Benjamin Franklin"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Compound interest is the most powerful force in the universe.",
+        "speaker": "Albert Einstein"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "You can get more of what you want with a kind word and a gun than you can with just a kind word.",
+        "speaker": "Al Capone"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "it has been said that democracy is the worst form of government except all the others that have been tried.",
+        "speaker": "Winston Churchill"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Political power grows out of the barrel of a gun.",
+        "speaker": "Mao Zedong"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Astronomy compels the soul to look upwards and leads us from this world to another.",
+        "speaker": "Plato"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Corporation, n. An ingenious device for obtaining individual profit without individual responsibility.",
+        "speaker": "Ambrose Bierce"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Chemistry means the difference between poverty and starvation and the abundant life.",
+        "speaker": "Robert Brent"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "You would make a ship sail against the winds and currents by lighting a bonfire under her deck ? I have no time for such nonsense.",
+        "speaker": "Napoleon, on Robert Fulton's Steamship"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has intended us to forgo their use.",
+        "speaker": "Galileo Galilei"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Before that steam drill shall beat me down, I'll die with my hammer in my hand.",
+        "speaker": "from 'John Henry, the Steel Driving Man'"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "People can have the Model T in any color - so long as it's black.",
+        "speaker": "Henry Ford"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "When I give food to the poor, they call me a saint. When I ask why the poor have no food, they call me a communist.",
+        "speaker": "Dom Helder Camara"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "To every action there is always opposed an equal reaction.",
+        "speaker": "Isaac Newton"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "It is not the strongest of the species that survive, but the one most responsive to change.",
+        "speaker": "Charles Darwin"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I fooled you, I fooled you, I got pig iron, I got pig iron, I got all pig iron.",
+        "speaker": "Lonnie Donegan, 'Rock Island Line'"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.",
+        "speaker": "Leonardo Da Vinci"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Artillery adds dignity to what would otherwise be a vulgar brawl.",
+        "speaker": "Frederick the Great"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The great masses of the people... Will more easily fall victims to a big lie than to a small one.",
+        "speaker": "Adolf Hitler ,Misatributted)"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "We will make electricity so cheap that only the rich will burn candles.",
+        "speaker": "Thomas Edison"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "As to diseases make a habit of two things - to help, or at least, to do no harm.",
+        "speaker": "Hippocrates"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Everything in life is somewhere else, and you get there in a car.",
+        "speaker": "E. B. White"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The Earth is the cradle of the mind, but one cannot eternally live in a cradle.",
+        "speaker": "Konstantin E. Tsiolkovsky"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "There is one rule for the industrialist and that is: Make the best quality of goods possible at the lowest cost possible, paying the highest wages possible.",
+        "speaker": "Henry Ford"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "If the radiance of a thousand suns were to burst at once into the sky, that would be like the splendor of the Mighty One... I am become Death, the Shatterer of Worlds.",
+        "speaker": "J. Robert Oppenheimer, quoting 'The Bhagavad Gita'"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Tell me what you eat, and I will tell you what you are.",
+        "speaker": "Anthelme Brilla,S-avarin"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Then one fine mornin' she puts on a New York station. You know her life was saved by Rock 'n' Roll.",
+        "speaker": "The Velvet Underground, 'Rock And Roll'"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Beep...beep...beep...beep...",
+        "speaker": "Sputnik I"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "I just want to say one word to you. Just one word: plastics.",
+        "speaker": "Calder Willingham, The Graduate"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Never trust a computer you can't throw out a window.",
+        "speaker": "Steve Wozniak"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The only thing worse than being talked about is not being talked about.",
+        "speaker": "Oscar Wilde"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The whole is greater than the sum of its parts.",
+        "speaker": "Aristotle"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "There is a single light of science, and to brighten it anywhere is to brighten it everywhere.",
+        "speaker": "Isaac Asimov"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "We do not inherit the earth from our ancestors, we borrow it from our children",
+        "speaker": "Native American Song"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Soon it will be a sin for parents to have a child which carries the heavy burden of genetic disease.",
+        "speaker": "Bob Edwards"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The real problem is not whether machines think, but whether men do.",
+        "speaker": "B. F. Skinner"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "Any sufficiently advanced technology is indistinguishable from magic.",
+        "speaker": "Arthur C. Clarke"
+    },
+    {
+        "type": "DirectQuote",
+        "quote": "The future will be better tomorrow.",
+        "speaker": "Dan Quayle"
+    }
+]
