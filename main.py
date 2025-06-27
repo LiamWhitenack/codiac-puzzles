@@ -1,6 +1,6 @@
 import sys
 from codiac_sandbox import MainWindow
-from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel
+from PySide6.QtWidgets import QApplication
 
 
 app = QApplication(sys.argv)
