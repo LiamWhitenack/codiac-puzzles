@@ -2,6 +2,7 @@ import random
 import re
 
 from codiac_sandbox.hint_types import GiveALetterHint, HintBase
+from codiac_sandbox.utils.make_letter_map import get_new_letter_map
 
 
 class CryptographBase:
@@ -15,9 +16,15 @@ class CryptographBase:
             hints = []
         self.string_to_encrypt = string_to_encrypt
         self.puzzle_type = puzzle_type
+        self.encryptionMap = get_new_letter_map(string_to_encrypt)
         letters = list(string_to_encrypt.lower())
         random.shuffle(letters)
         self.hints = hints + [GiveALetterHint(letter) for letter in letters]
+
+    def to_json(self) -> dict[str, list | str | dict[str, str]]:
+        return self.__dict__ | dict(
+            type=self.__class__.__name__, hints=[hint.to_json() for hint in self.hints]
+        )
 
 
 class ListPuzzle(CryptographBase):
