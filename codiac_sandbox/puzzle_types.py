@@ -12,14 +12,14 @@ class CryptographBase:
         puzzle_type: str = "Undefined",
         hints: list[HintBase] | None = None,
     ) -> None:
-        if hints is None:
-            hints = []
+        # if hints is None:
+        #     hints = []
         self.string_to_encrypt = string_to_encrypt
         self.puzzle_type = puzzle_type
         self.encryptionMap = get_new_letter_map(string_to_encrypt)
         letters = list(string_to_encrypt.lower())
         random.shuffle(letters)
-        self.hints = hints + [GiveALetterHint(letter) for letter in letters]
+        self.hints = [GiveALetterHint(letter) for letter in letters]
 
     def to_json(self) -> dict[str, list | str | dict[str, str]]:
         return self.__dict__ | dict(
@@ -40,7 +40,7 @@ class CharacterQuote(CryptographBase):
         source_type: str,
         character_name: str,
         source_title: str,
-        release_date: int,
+        release_date: str,
     ):
         super().__init__(quote, f"{source_type} Quote")
         self.character_name = character_name
@@ -50,7 +50,7 @@ class CharacterQuote(CryptographBase):
 
 class FamousDocumentQuote(CryptographBase):
     def __init__(
-        self, quote: str, source_title: str, author_name: str, publish_date: int
+        self, quote: str, source_title: str, author_name: str, publish_date: str
     ):
         super().__init__(quote, "Famous Document")
         self.source_title = source_title
@@ -59,7 +59,7 @@ class FamousDocumentQuote(CryptographBase):
 
 
 class DirectQuote(CryptographBase):
-    def __init__(self, quote: str, author: str, date: int | None = None) -> None:
+    def __init__(self, quote: str, author: str, date: str | None = None) -> None:
         super().__init__(quote, "Direct Quote")
         self.author = author
         self.date = date
@@ -71,7 +71,7 @@ class GeneralPhrase(CryptographBase):
 
 
 class SongLyrics(CryptographBase):
-    def __init__(self, lyric: str, artist: str, song_name: str, date: int) -> None:
+    def __init__(self, lyric: str, artist: str, song_name: str, date: str) -> None:
         super().__init__(lyric, "Song Lyric")
         self.artist = artist
         self.song_name = song_name

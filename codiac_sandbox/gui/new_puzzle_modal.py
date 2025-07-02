@@ -1,5 +1,4 @@
 import sys
-import json
 import inspect
 
 from PySide6.QtWidgets import (
@@ -15,7 +14,8 @@ from PySide6.QtWidgets import (
     QMessageBox,
 )
 
-from codiac_sandbox.hint_types import HintBase
+from codiac_sandbox.crud.create import save_puzzle
+from codiac_sandbox.crud.create import get_puzzle_parameters
 from codiac_sandbox.puzzle_types import CryptographBase  # or wherever it's defined
 
 
@@ -31,9 +31,12 @@ def get_all_subclasses(cls: type[CryptographBase]) -> set[type[CryptographBase]]
     return subclasses
 
 
-PUZZLE_CLASSES: dict[str, type[CryptographBase]] = {
-    subclass.__name__: subclass for subclass in get_all_subclasses(CryptographBase)
-}
+PUZZLE_CLASSES: dict[str, type[CryptographBase]] = dict(
+    sorted(
+        (subclass.__name__, subclass)
+        for subclass in get_all_subclasses(CryptographBase)
+    )
+)
 
 
 class AddPuzzleDialog(QDialog):
@@ -64,30 +67,17 @@ class AddPuzzleDialog(QDialog):
 
         self.type_selector.currentTextChanged.connect(self.update_form)
         self.submit_button.clicked.connect(self.handle_submit)
-        self.copy_button.clicked.connect(self.copy_to_clipboard)
 
         self.update_form(self.type_selector.currentText())
 
     def update_form(self, puzzle_type: str):
-        cls = PUZZLE_CLASSES[puzzle_type]
-        sig = inspect.signature(cls.__init__)
-        ignored_params = {
-            "self",
-            "string_to_encrypt",
-            "puzzle_type",
-            "hints",
-            "encryptionMap",
-        }
-
         while self.form_layout.count():
             item = self.form_layout.takeAt(0)
             if widget := item.widget():
                 widget.setParent(None)
 
         self.fields.clear()
-        for name, param in sig.parameters.items():
-            if name in ignored_params:
-                continue
+        for name, param in get_puzzle_parameters(puzzle_type).items():
             field = QLineEdit()
             placeholder = (
                 str(param.annotation)
@@ -105,19 +95,14 @@ class AddPuzzleDialog(QDialog):
         cls = PUZZLE_CLASSES[puzzle_type]
         kwargs = {}
 
-        sig = inspect.signature(cls.__init__)
-        ignored_params = {"self", "string_to_encrypt", "puzzle_type", "hints"}
-
-        for name, param in sig.parameters.items():
-            if name in ignored_params:
-                continue
+        for name, param in get_puzzle_parameters(puzzle_type).items():
             text = self.fields[name].text()
             if not text and param.default != inspect.Parameter.empty:
-                continue  # use default
+                return
             try:
                 if "int" in str(param.annotation) and text:
                     kwargs[name] = int(text)
-                elif "list" in str(param.annotation) or "List" in str(param.annotation):
+                elif "list" in str(param.annotation):
                     kwargs[name] = [s.strip() for s in text.split(",")]
                 else:
                     kwargs[name] = text
@@ -126,15 +111,7 @@ class AddPuzzleDialog(QDialog):
                 return
 
         try:
-            obj = cls(**kwargs)
-            self.generated_json = json.dumps(obj.to_json(), indent=2)
+            save_puzzle("resources/master-puzzle-list.json", cls, kwargs)
             QMessageBox.information(self, "Success", "Puzzle created.")
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Could not create puzzle:\n{e}")
-
-    def copy_to_clipboard(self):
-        if not self.generated_json:
-            QMessageBox.warning(self, "Nothing to copy", "Submit a puzzle first.")
-            return
-        QApplication.clipboard().setText(self.generated_json)
-        QMessageBox.information(self, "Copied", "JSON copied to clipboard.")
