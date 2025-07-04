@@ -16,27 +16,7 @@ from PySide6.QtWidgets import (
 
 from codiac_sandbox.crud.create import save_puzzle
 from codiac_sandbox.crud.create import get_puzzle_parameters
-from codiac_sandbox.puzzle_types import CryptographBase  # or wherever it's defined
-
-
-def get_all_subclasses(cls: type[CryptographBase]) -> set[type[CryptographBase]]:
-    subclasses = set()
-    work = [cls]
-    while work:
-        parent = work.pop()
-        for child in parent.__subclasses__():
-            if child not in subclasses:
-                subclasses.add(child)
-                work.append(child)
-    return subclasses
-
-
-PUZZLE_CLASSES: dict[str, type[CryptographBase]] = dict(
-    sorted(
-        (subclass.__name__, subclass)
-        for subclass in get_all_subclasses(CryptographBase)
-    )
-)
+from codiac_sandbox.utils.puzzle_classes import PUZZLE_CLASSES
 
 
 class AddPuzzleDialog(QDialog):
