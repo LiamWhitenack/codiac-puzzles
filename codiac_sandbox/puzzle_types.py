@@ -12,17 +12,19 @@ class CryptographBase:
         puzzle_type: str = "Undefined",
         hints: list[HintBase] | None = None,
     ) -> None:
-        # if hints is None:
-        #     hints = []
+        if hints is None:
+            hints = []
         self.string_to_encrypt = string_to_encrypt
         self.puzzle_type = puzzle_type
         self.encryptionMap = get_new_letter_map(string_to_encrypt)
-        letters = list(string_to_encrypt.lower())
+        letters = list(
+            s for s in string_to_encrypt.upper() if s in "QWERTYUIOPASDFGHJKLZXCVBNM"
+        )
         random.shuffle(letters)
         self.hints = [GiveALetterHint(letter) for letter in letters]
 
     def to_json(self) -> dict[str, list | str | dict[str, str]]:
-        return self.__dict__ | dict(
+        return {k: v for k, v in self.__dict__.items() if v if not None} | dict(
             type=self.__class__.__name__, hints=[hint.to_json() for hint in self.hints]
         )
 
@@ -39,43 +41,43 @@ class CharacterQuote(CryptographBase):
         quote: str,
         source_type: str,
         character_name: str,
-        source_title: str,
+        source: str,
         release_date: str,
     ):
         super().__init__(quote, f"{source_type} Quote")
         self.character_name = character_name
-        self.source_title = source_title
+        self.source = source
         self.release_date = release_date
 
 
 class FamousDocumentQuote(CryptographBase):
-    def __init__(
-        self, quote: str, source_title: str, author_name: str, publish_date: str
-    ):
+    def __init__(self, quote: str, source: str, author: str, release_date: str):
         super().__init__(quote, "Famous Document")
-        self.source_title = source_title
-        self.AuthorName = author_name
-        self.release_date = publish_date
+        self.source = source
+        self.AuthorName = author
+        self.release_date = release_date
 
 
 class DirectQuote(CryptographBase):
-    def __init__(self, quote: str, author: str, date: str | None = None) -> None:
+    def __init__(
+        self, quote: str, author: str, release_date: str | None = None
+    ) -> None:
         super().__init__(quote, "Direct Quote")
         self.author = author
-        self.date = date
+        self.release_date = release_date
 
 
 class GeneralPhrase(CryptographBase):
-    def __init__(self, quote: str):
-        super().__init__(quote, "General Quote")
+    def __init__(self, phrase: str):
+        super().__init__(phrase, "General Quote")
 
 
 class SongLyrics(CryptographBase):
-    def __init__(self, lyric: str, artist: str, song_name: str, date: str) -> None:
-        super().__init__(lyric, "Song Lyric")
+    def __init__(self, lyrics: str, artist: str, title: str, release_date: str) -> None:
+        super().__init__(lyrics, "Song lyrics")
         self.artist = artist
-        self.song_name = song_name
-        self.date = date
+        self.title = title
+        self.release_date = release_date
 
 
 class Riddle(CryptographBase):
