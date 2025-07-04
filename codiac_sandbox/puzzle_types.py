@@ -16,17 +16,19 @@ class CryptographBase:
             hints = []
         self.string_to_encrypt = string_to_encrypt
         self.puzzle_type = puzzle_type
-        self.encryptionMap = get_new_letter_map(string_to_encrypt)
+        self.encryption_map = get_new_letter_map(string_to_encrypt)
         letters = list(
             s for s in string_to_encrypt.upper() if s in "QWERTYUIOPASDFGHJKLZXCVBNM"
         )
         random.shuffle(letters)
-        self.hints = [GiveALetterHint(letter) for letter in letters]
+        self.hints = hints + [GiveALetterHint(letter) for letter in letters]
 
     def to_json(self) -> dict[str, list | str | dict[str, str]]:
-        return {k: v for k, v in self.__dict__.items() if v if not None} | dict(
-            type=self.__class__.__name__, hints=[hint.to_json() for hint in self.hints]
-        )
+        res = self.__dict__.copy()
+        del res["hints"]
+        del res["encryption_map"]
+        res["type"] = self.__class__.__name__
+        return res
 
 
 class ListPuzzle(CryptographBase):
