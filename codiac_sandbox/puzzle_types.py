@@ -25,10 +25,19 @@ class CryptographBase:
 
     def to_json(self) -> dict[str, list | str | dict[str, str]]:
         res = self.__dict__.copy()
-        del res["hints"]
-        del res["encryption_map"]
-        res["type"] = self.__class__.__name__
-        return res
+        res = (
+            dict(
+                type=self.__class__.__name__,
+                puzzle_type=self.puzzle_type,
+                string_to_encrypt=self.string_to_encrypt,
+            )
+            | res
+            | dict(
+                hints=None,
+                encryption_map=None,
+            )
+        )
+        return {k: v for k, v in res.items() if v is not None}
 
 
 class ListPuzzle(CryptographBase):
