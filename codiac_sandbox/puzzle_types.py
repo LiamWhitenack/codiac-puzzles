@@ -1,11 +1,12 @@
 import random
-import re
+from typing import Any, Self
+from abc import ABC, abstractmethod
 
 from codiac_sandbox.hint_types import GiveALetterHint, HintBase
 from codiac_sandbox.utils.make_letter_map import get_new_letter_map
 
 
-class CryptographBase:
+class CryptographBase(ABC):
     def __init__(
         self,
         string_to_encrypt: str,
@@ -39,11 +40,21 @@ class CryptographBase:
         )
         return {k: v for k, v in res.items() if v is not None}
 
+    @classmethod
+    @abstractmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        """Create an instance from JSON data. Must be implemented by subclasses."""
+        pass
+
 
 class ListPuzzle(CryptographBase):
     def __init__(self, setup: str, elements: list[str]) -> None:
         super().__init__(" ".join(elements), "list")
         self.setup = setup
+
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(setup=data["setup"], elements=data["string_to_encrypt"].split())
 
 
 class CharacterQuote(CryptographBase):
@@ -60,6 +71,16 @@ class CharacterQuote(CryptographBase):
         self.source = source
         self.release_date = release_date
 
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(
+            quote=data["string_to_encrypt"],
+            source_type=data["puzzle_type"].split(" ")[0],
+            character_name=data["character_name"],
+            source=data["source"],
+            release_date=data["release_date"],
+        )
+
 
 class FamousDocumentQuote(CryptographBase):
     def __init__(self, quote: str, source: str, author: str, release_date: str):
@@ -67,6 +88,15 @@ class FamousDocumentQuote(CryptographBase):
         self.source = source
         self.AuthorName = author
         self.release_date = release_date
+
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(
+            quote=data["string_to_encrypt"],
+            source=data["source"],
+            author=data["AuthorName"],
+            release_date=data["release_date"],
+        )
 
 
 class DirectQuote(CryptographBase):
@@ -77,10 +107,22 @@ class DirectQuote(CryptographBase):
         self.author = author
         self.release_date = release_date
 
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(
+            quote=data["string_to_encrypt"],
+            author=data["author"],
+            release_date=data.get("release_date"),
+        )
+
 
 class GeneralPhrase(CryptographBase):
     def __init__(self, phrase: str):
         super().__init__(phrase, "General Quote")
+
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(phrase=data["string_to_encrypt"])
 
 
 class SongLyrics(CryptographBase):
@@ -90,14 +132,49 @@ class SongLyrics(CryptographBase):
         self.title = title
         self.release_date = release_date
 
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(
+            lyrics=data["string_to_encrypt"],
+            artist=data["artist"],
+            title=data["title"],
+            release_date=data["release_date"],
+        )
+
 
 class Riddle(CryptographBase):
     def __init__(self, question: str, answer: str) -> None:
         super().__init__(answer, "Riddle")
         self.question = question
 
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(
+            question=data["question"],
+            answer=data["string_to_encrypt"],
+        )
+
 
 class RiddleSolvedInReverse(CryptographBase):
     def __init__(self, question: str, answer: str) -> None:
         super().__init__(question, "Reverse Riddle")
         self.answer = answer
+
+    @classmethod
+    def from_json(cls, data: dict[str, Any]) -> Self:
+        return cls(
+            question=data["string_to_encrypt"],
+            answer=data["answer"],
+        )
+
+
+PuzzleClass = (
+    ListPuzzle
+    | CharacterQuote
+    | FamousDocumentQuote
+    | DirectQuote
+    | GeneralPhrase
+    | SongLyrics
+    | Riddle
+    | RiddleSolvedInReverse
+)
