@@ -1,13 +1,15 @@
-# puzzle_ui.py
-
 from PySide6.QtWidgets import (
     QVBoxLayout,
+    QComboBox,
     QListWidget,
-    QTextEdit,
     QListWidgetItem,
-    QSplitter,
     QWidget,
+    QLabel,
+    QHBoxLayout,
+    QSizePolicy,
 )
+from PySide6.QtGui import QColor, QBrush
+
 from PySide6.QtCore import Qt
 import json
 
@@ -15,15 +17,26 @@ from codiac_sandbox.utils.puzzle_classes import PUZZLE_CLASSES, from_json
 
 
 class PuzzleUI:
-    def __init__(self, parent: QWidget):
+    def __init__(self, parent: QWidget) -> None:
         self.parent = parent
         self.layout = QVBoxLayout()
+        self.parent.setLayout(self.layout)
 
         self.load_quotes()
         self.build_lists()
-        self.build_splitter()
 
-    def load_quotes(self):
+        self.layout.addWidget(self.category_combo)
+
+        # Main content layout (quote list + detail view)
+        self.main_content_layout = QHBoxLayout()
+        self.layout.addLayout(self.main_content_layout)
+
+        self.main_content_layout.addWidget(self.quote_list)
+        self.main_content_layout.addWidget(self.detail_view_container)
+
+        self.display_quotes(list(self.quotes_by_category)[0])
+
+    def load_quotes(self) -> None:
         with open("resources/master-puzzle-list.json") as f:
             self.quotes_by_category: dict[str, list[dict]] = {}
             for q in json.load(f):
@@ -34,42 +47,73 @@ class PuzzleUI:
             k: v for k, v in sorted(self.quotes_by_category.items())
         }
 
-    def build_lists(self):
-        self.category_list = QListWidget()
-        self.category_list.addItems(list(self.quotes_by_category))
-        self.category_list.currentItemChanged.connect(self.display_quotes)
-        self.category_list.setMaximumWidth(200)
+    def build_lists(self) -> None:
+        self.category_combo = QComboBox()
+        self.category_combo.addItems(list(self.quotes_by_category))
+        self.category_combo.currentTextChanged.connect(self.display_quotes)
+        self.category_combo.setMaximumWidth(200)
 
         self.quote_list = QListWidget()
         self.quote_list.itemClicked.connect(self.display_quote_details)
+        self.quote_list.setFixedWidth(450)  # Set fixed width here
 
-        self.detail_view = QTextEdit()
+        # Container for labels in the detail view
+        self.detail_view_container = QWidget()
+        self.detail_view_layout = QVBoxLayout()
+        self.detail_view_container.setLayout(self.detail_view_layout)
+        self.detail_view_layout.setAlignment(Qt.AlignTop)
 
-    def build_splitter(self):
-        splitter = QSplitter()
-        splitter.addWidget(self.category_list)
-        splitter.addWidget(self.quote_list)
-        splitter.addWidget(self.detail_view)
-        splitter.setStretchFactor(0, 0)
+    from PySide6.QtGui import QColor, QBrush
 
-        self.layout.addWidget(splitter)
-
-    def display_quotes(self, current: QListWidgetItem, _):
+    def display_quotes(self, category: str) -> None:
         self.quote_list.clear()
-        if current:
-            category = current.text()
-            for quote in self.quotes_by_category[category]:
-                text = quote["string_to_encrypt"]
-                item = QListWidgetItem(text)
-                item.setData(Qt.UserRole, quote)
-                self.quote_list.addItem(item)
+        for i, quote in enumerate(self.quotes_by_category[category]):
+            text = quote["string_to_encrypt"]
 
-    def display_quote_details(self, item: QListWidgetItem):
-        puzzle_data: dict = item.data(Qt.UserRole)
+            label = QLabel(text)
+            label.setWordWrap(True)
+            label.setStyleSheet("padding: 4px;")
+            label.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
+            label.setFixedWidth(280)
+            label.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+
+            h_layout = QHBoxLayout()
+            h_layout.setAlignment(Qt.AlignLeft)
+            h_layout.addWidget(label)
+            h_layout.setContentsMargins(0, 0, 0, 0)
+            h_layout.setSpacing(6)
+
+            widget = QWidget()
+            widget.setLayout(h_layout)
+
+            item = QListWidgetItem()
+            item.setSizeHint(widget.sizeHint())
+
+            # Set background tint on the QListWidgetItem, not the widget
+            if i % 2 == 1:
+                item.setBackground(
+                    QBrush(QColor("#f0f0f0"))
+                )  # Light gray for alternating rows
+
+            self.quote_list.addItem(item)
+            self.quote_list.setItemWidget(item, widget)
+
+            item.setData(256, quote)
+
+    def display_quote_details(self, item: QListWidgetItem) -> None:
+        # Clear previous labels
+        for i in reversed(range(self.detail_view_layout.count())):
+            child = self.detail_view_layout.itemAt(i).widget()
+            if child:
+                child.deleteLater()
+
+        puzzle_data: dict = item.data(256)
         puzzle = from_json(PUZZLE_CLASSES[puzzle_data.pop("type")], puzzle_data)
-        details = ""
+
         for key, value in puzzle.to_json().items():
             if key == "type":
                 continue
-            details += f"<b>{key.replace('_', ' ').title()}:</b> {value}<br>"
-        self.detail_view.setHtml(details)
+            label = QLabel(f"<b>{key.replace('_', ' ').title()}:</b> {value}")
+            label.setTextFormat(Qt.RichText)
+            label.setWordWrap(True)
+            self.detail_view_layout.addWidget(label)

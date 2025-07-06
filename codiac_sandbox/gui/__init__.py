@@ -12,6 +12,7 @@ class MainWindow(QWidget):
     def __init__(self) -> None:
         super().__init__()
         self.setWindowTitle("Quotes by Category")
+        self.setGeometry(250, 250, 1000, 500)
 
         main_layout = QVBoxLayout()
 
