@@ -37,16 +37,7 @@ class AddPuzzleDialog(QDialog):
         self.form_widget.setLayout(self.form_layout)
         self._layout.addWidget(self.form_widget)
 
-        self.submit_button = QPushButton("Submit")
-        self.copy_button = QPushButton("Copy to Clipboard")
-        self._layout.addWidget(self.submit_button)
-        self._layout.addWidget(self.copy_button)
-
-        self.fields = {}
-        self.generated_json = ""
-
         self.type_selector.currentTextChanged.connect(self.update_form)
-        self.submit_button.clicked.connect(self.handle_submit)
 
         self.update_form(self.type_selector.currentText())
 
@@ -56,7 +47,7 @@ class AddPuzzleDialog(QDialog):
             if widget := item.widget():
                 widget.setParent(None)
 
-        self.fields.clear()
+        fields = {}
         for name, param in get_puzzle_parameters(puzzle_type).items():
             field = QLineEdit()
             placeholder = (
@@ -67,7 +58,7 @@ class AddPuzzleDialog(QDialog):
             if param.default != inspect.Parameter.empty:
                 placeholder += f" (default: {param.default})"
             field.setPlaceholderText(placeholder.strip())
-            self.fields[name] = field
+            fields[name] = field
             self.form_layout.addRow(QLabel(name), field)
 
     def handle_submit(self):

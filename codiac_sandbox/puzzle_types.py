@@ -31,6 +31,7 @@ class CryptographBase(ABC):
                 type=self.__class__.__name__,
                 puzzle_type=self.puzzle_type,
                 string_to_encrypt=self.string_to_encrypt,
+                length=len(self.string_to_encrypt),
             )
             | res
             | dict(
@@ -38,7 +39,7 @@ class CryptographBase(ABC):
                 encryption_map=None,
             )
         )
-        return {k: v for k, v in res.items() if v is not None}
+        return {k: str(v) for k, v in res.items() if v is not None}
 
     @classmethod
     @abstractmethod
@@ -86,7 +87,7 @@ class FamousDocumentQuote(CryptographBase):
     def __init__(self, quote: str, source: str, author: str, release_date: str):
         super().__init__(quote, "Famous Document")
         self.source = source
-        self.AuthorName = author
+        self.author = author
         self.release_date = release_date
 
     @classmethod
@@ -94,7 +95,7 @@ class FamousDocumentQuote(CryptographBase):
         return cls(
             quote=data["string_to_encrypt"],
             source=data["source"],
-            author=data["AuthorName"],
+            author=data["author"],
             release_date=data["release_date"],
         )
 

@@ -6,5 +6,5 @@ from PySide6.QtWidgets import QApplication
 app = QApplication(sys.argv)
 window = MainWindow()
 window.show()
-window.showMaximized()
+# window.showMaximized()
 sys.exit(app.exec())
