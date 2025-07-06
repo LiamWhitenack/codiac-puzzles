@@ -24,7 +24,7 @@ class CryptographBase(ABC):
         random.shuffle(letters)
         self.hints = hints + [GiveALetterHint(letter) for letter in letters]
 
-    def to_json(self) -> dict[str, list | str | dict[str, str]]:
+    def to_json(self, all_info: bool = False) -> dict[str, list | str | dict[str, str]]:
         res = self.__dict__.copy()
         res = (
             dict(
@@ -34,11 +34,15 @@ class CryptographBase(ABC):
                 length=len(self.string_to_encrypt),
             )
             | res
-            | dict(
+        )
+        if not all_info:
+            res |= dict(
                 hints=None,
                 encryption_map=None,
             )
-        )
+        else:
+            res["hints"] = [hint.to_json() for hint in res["hints"]]
+
         return {k: str(v) for k, v in res.items() if v is not None}
 
     @classmethod

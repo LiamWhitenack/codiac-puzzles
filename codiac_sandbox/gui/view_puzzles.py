@@ -7,12 +7,15 @@ from PySide6.QtWidgets import (
     QLabel,
     QHBoxLayout,
     QSizePolicy,
+    QPushButton,
 )
+from PySide6.QtWidgets import QScrollArea
 from PySide6.QtGui import QColor, QBrush
 
 from PySide6.QtCore import Qt
 import json
 
+from codiac_sandbox.gui.date_selector_widget import DateSelectorWidget
 from codiac_sandbox.utils.puzzle_classes import PUZZLE_CLASSES, from_json
 
 
@@ -32,7 +35,7 @@ class PuzzleUI:
         self.layout.addLayout(self.main_content_layout)
 
         self.main_content_layout.addWidget(self.quote_list)
-        self.main_content_layout.addWidget(self.detail_view_container)
+        self.main_content_layout.addWidget(self.detail_scroll_area)
 
         self.display_quotes(list(self.quotes_by_category)[0])
 
@@ -61,7 +64,12 @@ class PuzzleUI:
         self.detail_view_container = QWidget()
         self.detail_view_layout = QVBoxLayout()
         self.detail_view_container.setLayout(self.detail_view_layout)
-        self.detail_view_layout.setAlignment(Qt.AlignTop)
+        self.detail_view_layout.setAlignment(Qt.AlignTop)  # type: ignore[attr-defined]
+
+        # Wrap it in a scroll area
+        self.detail_scroll_area = QScrollArea()
+        self.detail_scroll_area.setWidgetResizable(True)
+        self.detail_scroll_area.setWidget(self.detail_view_container)
 
     from PySide6.QtGui import QColor, QBrush
 
@@ -73,12 +81,12 @@ class PuzzleUI:
             label = QLabel(text)
             label.setWordWrap(True)
             label.setStyleSheet("padding: 4px;")
-            label.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
+            label.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)  # type: ignore[attr-defined]
             label.setFixedWidth(280)
-            label.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+            label.setAlignment(Qt.AlignLeft | Qt.AlignTop)  # type: ignore[attr-defined]
 
             h_layout = QHBoxLayout()
-            h_layout.setAlignment(Qt.AlignLeft)
+            h_layout.setAlignment(Qt.AlignLeft)  # type: ignore[attr-defined]
             h_layout.addWidget(label)
             h_layout.setContentsMargins(0, 0, 0, 0)
             h_layout.setSpacing(6)
@@ -110,10 +118,12 @@ class PuzzleUI:
         puzzle_data: dict = item.data(256)
         puzzle = from_json(PUZZLE_CLASSES[puzzle_data.pop("type")], puzzle_data)
 
+        self.detail_view_layout.addWidget(DateSelectorWidget(puzzle))
+
         for key, value in puzzle.to_json().items():
-            if key == "type":
+            if key in ["string_to_encrypt", "type"]:
                 continue
             label = QLabel(f"<b>{key.replace('_', ' ').title()}:</b> {value}")
-            label.setTextFormat(Qt.RichText)
+            label.setTextFormat(Qt.RichText)  # type: ignore[attr-defined]
             label.setWordWrap(True)
             self.detail_view_layout.addWidget(label)
