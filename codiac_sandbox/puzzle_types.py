@@ -26,7 +26,9 @@ class CryptographBase(ABC):
         self.hints = hints + [GiveALetterHint(letter) for letter in letters]
         self.used = used
 
-    def to_json(self, all_info: bool = False) -> dict[str, list | str | dict[str, str]]:
+    def to_json(
+        self, to_read_from_frontend: bool = False
+    ) -> dict[str, list | str | dict[str, str]]:
         res = self.__dict__.copy()
         res = (
             dict(
@@ -37,14 +39,14 @@ class CryptographBase(ABC):
             )
             | res
         )
-        if not all_info:
+        if not to_read_from_frontend:
             res |= dict(
                 hints=None,
                 encryption_map=None,
             )
         else:
             hints = [hint.to_json() for hint in self.hints]
-            res |= dict(hints=hints, used=None)  # type: ignore[attr-defined]
+            res |= dict(hints=hints, used=None, length=None)  # type: ignore[attr-defined]
 
         return {k: str(v) for k, v in res.items() if v is not None}
 
