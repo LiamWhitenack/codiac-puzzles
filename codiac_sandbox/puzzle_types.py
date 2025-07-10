@@ -20,7 +20,7 @@ class CryptographBase(ABC):
         self.puzzle_type = puzzle_type
         self.encryption_map = get_new_letter_map(string_to_encrypt)
         letters = list(
-            s for s in string_to_encrypt.upper() if s in "QWERTYUIOPASDFGHJKLZXCVBNM"
+            s for s in string_to_encrypt.lower() if s in "qwertyuiopasdfghjklzxcvbnm"
         )
         random.shuffle(letters)
         self.hints = hints + [GiveALetterHint(letter) for letter in letters]

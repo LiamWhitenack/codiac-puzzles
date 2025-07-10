@@ -10,7 +10,7 @@ def get_new_letter_map(quote: str) -> dict[str, str]:
     return {
         char: icon
         for char, icon in zip(
-            set(quote.upper()).intersection("QWERTYUIOPASDFGHJKLZXCVBNM"),
+            set(quote.lower()).intersection("qwertyuiopasdfghjklzxcvbnm"),
             sample(icons, 26),
         )
     }
