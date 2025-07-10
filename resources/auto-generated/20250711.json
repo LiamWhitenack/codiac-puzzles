@@ -1,0 +1,8 @@
+{
+  "type": "DirectQuote",
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "A god from the machine",
+  "encryption_map": "{'m': 'battery-charging', 'g': 'cut', 'd': 'caret-forward', 'a': 'color-fill', 'r': 'nuclear', 'h': 'cloud-download', 'i': 'enter', 'o': 'move', 'c': 'copy', 'n': 'bus', 'f': 'at', 'e': 'boat', 't': 'battery-dead'}",
+  "hints": "[{'letter': 'c', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}]",
+  "author": "Menander"
+}
