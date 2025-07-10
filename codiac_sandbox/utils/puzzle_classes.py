@@ -28,3 +28,8 @@ T = TypeVar("T", bound=CryptographBase)
 
 def from_json(cls: type[T], data: dict[str, Any]) -> T:
     return cls.from_json(data)
+
+
+def parse_puzzle(data: dict[str, Any]) -> CryptographBase:
+    cls = PUZZLE_CLASSES[data["type"]]
+    return cls.from_json(data)
