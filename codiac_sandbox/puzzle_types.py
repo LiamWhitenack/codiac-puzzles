@@ -13,6 +13,7 @@ class CryptographBase(ABC):
         puzzle_type: str = "Undefined",
         hints: list[HintBase] | None = None,
         used: bool = False,
+        **kwargs: str,
     ) -> None:
         if hints is None:
             hints = []
@@ -25,28 +26,42 @@ class CryptographBase(ABC):
         random.shuffle(letters)
         self.hints = hints + [GiveALetterHint(letter) for letter in letters]
         self.used = used
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def to_json(
         self, to_read_from_frontend: bool = False
     ) -> dict[str, list | str | dict[str, str]]:
-        res = self.__dict__.copy()
-        res = (
-            dict(
-                type=self.__class__.__name__,
-                puzzle_type=self.puzzle_type,
-                string_to_encrypt=self.string_to_encrypt,
-                length=len(self.string_to_encrypt),
-            )
-            | res
-        )
+        res: dict[str, Any]
+        data = self.__dict__.copy()
+        data["hints"] = [hint.to_json() for hint in data["hints"]]
         if not to_read_from_frontend:
+            res = data
+            res = (
+                dict(
+                    type=self.__class__.__name__,
+                    puzzle_type=self.puzzle_type,
+                    string_to_encrypt=self.string_to_encrypt,
+                    length=len(self.string_to_encrypt),
+                )
+                | res
+            )
             res |= dict(
                 hints=None,
                 encryption_map=None,
             )
         else:
-            hints = [hint.to_json() for hint in self.hints]
-            res |= dict(hints=hints, used=None, length=None)  # type: ignore[attr-defined]
+            res = {}
+            for key in ["used"]:
+                del data[key]
+            for key in ["puzzle_type", "string_to_encrypt", "hints", "encryption_map"]:
+                res[key] = data.pop(key)
+
+            res["other_info"] = {
+                k.replace("_", " ").title(): str(v)
+                for k, v in data.items()
+                if v is not None
+            }
 
         return {k: str(v) for k, v in res.items() if v is not None}
 
@@ -78,13 +93,13 @@ class CharacterQuote(CryptographBase):
         source_type: str,
         character_name: str,
         source: str,
-        release_date: str,
+        date: str,
         used: bool = False,
     ):
         super().__init__(quote, f"{source_type} Quote", used=used)
         self.character_name = character_name
         self.source = source
-        self.release_date = release_date
+        self.date = date
 
     @classmethod
     def from_json(cls, data: dict[str, Any]) -> Self:
@@ -93,7 +108,7 @@ class CharacterQuote(CryptographBase):
             source_type=data["puzzle_type"].split(" ")[0],
             character_name=data["character_name"],
             source=data["source"],
-            release_date=data["release_date"],
+            date=data["date"],
             used=data["used"],
         )
 
@@ -104,13 +119,13 @@ class FamousDocumentQuote(CryptographBase):
         quote: str,
         source: str,
         author: str,
-        release_date: str,
+        date: str,
         used: bool = False,
     ):
         super().__init__(quote, "Famous Document", used=used)
         self.source = source
         self.author = author
-        self.release_date = release_date
+        self.date = date
 
     @classmethod
     def from_json(
@@ -122,7 +137,7 @@ class FamousDocumentQuote(CryptographBase):
             quote=data["string_to_encrypt"],
             source=data["source"],
             author=data["author"],
-            release_date=data["release_date"],
+            date=data["date"],
             used=data["used"],
         )
 
@@ -132,19 +147,19 @@ class DirectQuote(CryptographBase):
         self,
         quote: str,
         author: str,
-        release_date: str | None = None,
+        date: str | None = None,
         used: bool = False,
     ) -> None:
         super().__init__(quote, "Direct Quote", used=used)
         self.author = author
-        self.release_date = release_date
+        self.date = date
 
     @classmethod
     def from_json(cls, data: dict[str, Any]) -> Self:
         return cls(
             quote=data["string_to_encrypt"],
             author=data["author"],
-            release_date=data.get("release_date"),
+            date=data.get("date"),
             used=data["used"],
         )
 
@@ -168,13 +183,13 @@ class SongLyrics(CryptographBase):
         lyrics: str,
         artist: str,
         title: str,
-        release_date: str,
+        date: str,
         used: bool = False,
     ) -> None:
         super().__init__(lyrics, "Song lyrics", used=used)
         self.artist = artist
         self.title = title
-        self.release_date = release_date
+        self.date = date
 
     @classmethod
     def from_json(cls, data: dict[str, Any]) -> Self:
@@ -182,7 +197,7 @@ class SongLyrics(CryptographBase):
             lyrics=data["string_to_encrypt"],
             artist=data["artist"],
             title=data["title"],
-            release_date=data["release_date"],
+            date=data["date"],
             used=data["used"],
         )
 
