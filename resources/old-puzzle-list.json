@@ -14,7 +14,7 @@
         "source_type": "Film",
         "character_name": "Boromir",
         "source": "Lord of the Rings: The Fellowship of the Ring ,Film)",
-        "release_date": "2001"
+        "date": "2001"
     },
     {
         "type": "CharacterQuote",
@@ -22,7 +22,7 @@
         "source_type": "Film",
         "character_name": "Frozone's Wife",
         "source": "The Incredibles",
-        "release_date": "2004"
+        "date": "2004"
     },
     {
         "type": "CharacterQuote",
@@ -30,7 +30,7 @@
         "source_type": "Film",
         "character_name": "Pete Mitchell",
         "source": "Top Gun",
-        "release_date": "1986"
+        "date": "1986"
     },
     {
         "type": "CharacterQuote",
@@ -38,7 +38,7 @@
         "source_type": "Film",
         "character_name": "Biff Tannen",
         "source": "Back to The Future Part II",
-        "release_date": "1989"
+        "date": "1989"
     },
     {
         "type": "CharacterQuote",
@@ -46,7 +46,7 @@
         "source_type": "Film",
         "character_name": "Colonel Bill Kilgore",
         "source": "Apocalypse Now",
-        "release_date": "1979"
+        "date": "1979"
     },
     {
         "type": "CharacterQuote",
@@ -54,7 +54,7 @@
         "source_type": "Film",
         "character_name": "Bruce",
         "source": "Finding Nemo",
-        "release_date": "2003"
+        "date": "2003"
     },
     {
         "type": "CharacterQuote",
@@ -62,7 +62,7 @@
         "source_type": "Film",
         "character_name": "Yoda",
         "source": "Episode I: The Phantom Menace",
-        "release_date": "1999"
+        "date": "1999"
     },
     {
         "type": "CharacterQuote",
@@ -70,7 +70,7 @@
         "source_type": "Film",
         "character_name": "Anakin Skywalker",
         "source": "Episode II: Attack of The Clones",
-        "release_date": "2002"
+        "date": "2002"
     },
     {
         "type": "CharacterQuote",
@@ -78,7 +78,7 @@
         "source_type": "Film",
         "character_name": "Dr. Doofenshmirtz",
         "source": "Phineas and Ferb the Movie: Across the 2nd Dimension",
-        "release_date": "2011"
+        "date": "2011"
     },
     {
         "type": "CharacterQuote",
@@ -86,7 +86,7 @@
         "source_type": "Film",
         "character_name": "Inigo Montoya",
         "source": "The Princess Bride",
-        "release_date": "1987"
+        "date": "1987"
     },
     {
         "type": "CharacterQuote",
@@ -94,7 +94,7 @@
         "source_type": "Film",
         "character_name": "Andy Dufresne",
         "source": "The Shawshank Redemption",
-        "release_date": "1994"
+        "date": "1994"
     },
     {
         "type": "CharacterQuote",
@@ -102,7 +102,7 @@
         "source_type": "Film",
         "character_name": "Tighten",
         "source": "Megamind",
-        "release_date": "2010"
+        "date": "2010"
     },
     {
         "type": "CharacterQuote",
@@ -110,7 +110,7 @@
         "source_type": "Film",
         "character_name": "Forrest Gump",
         "source": "Forrest Gump",
-        "release_date": "1994"
+        "date": "1994"
     },
     {
         "type": "CharacterQuote",
@@ -118,14 +118,14 @@
         "source_type": "Film",
         "character_name": "Buzz Lightyear",
         "source": "Toy Story",
-        "release_date": "1995"
+        "date": "1995"
     },
     {
         "type": "SongLyrics",
         "lyrics": "Never gonna give you up, never gonna let you down",
         "artist": "Rick Astley",
         "title": "Never Gonna Give You Up",
-        "release_date": 1987
+        "date": 1987
     },
     {
         "type": "GeneralPhrase",
@@ -141,7 +141,7 @@
         "source_type": "Film",
         "character_name": "Commissioner Gordon",
         "source": "The Dark Knight",
-        "release_date": "2008"
+        "date": "2008"
     },
     {
         "type": "CharacterQuote",
@@ -149,7 +149,7 @@
         "source_type": "Film",
         "character_name": "Dorothy Gale",
         "source": "Wizard of Oz",
-        "release_date": "1939"
+        "date": "1939"
     },
     {
         "type": "CharacterQuote",
@@ -157,7 +157,7 @@
         "source_type": "Film",
         "character_name": "William Wilberforce",
         "source": "Braveheart",
-        "release_date": "1995"
+        "date": "1995"
     },
     {
         "type": "GeneralPhrase",
@@ -169,7 +169,7 @@
         "source_type": "Film",
         "character_name": "Eddie Brock",
         "source": "SPIDER-MAN 3",
-        "release_date": "2007"
+        "date": "2007"
     },
     {
         "type": "CharacterQuote",
@@ -177,14 +177,14 @@
         "source_type": "Film",
         "character_name": "Truman Burbank",
         "source": "The Truman Show",
-        "release_date": "1998"
+        "date": "1998"
     },
     {
         "type": "SongLyrics",
         "lyrics": "Hello from the other side I must've called a thousand times To tell you I'm sorry for everything that I've done But when I call, you never seem to be home",
         "artist": "Adele",
         "title": "Hello",
-        "release_date": "2015"
+        "date": "2015"
     },
     {
         "type": "CharacterQuote",
@@ -192,7 +192,7 @@
         "source_type": "Sitcom",
         "character_name": "Michael Scott",
         "source": "The Office",
-        "release_date": "2005"
+        "date": "2005"
     },
     {
         "type": "GeneralPhrase",
@@ -204,7 +204,7 @@
         "source_type": "Novel",
         "character_name": "Gandalf",
         "source": "The Hobbit",
-        "release_date": "1937"
+        "date": "1937"
     },
     {
         "type": "CharacterQuote",
@@ -212,7 +212,7 @@
         "source_type": "Film",
         "character_name": "Nigel Powers",
         "source": "Austin Powers in Goldmember",
-        "release_date": "2002"
+        "date": "2002"
     },
     {
         "type": "CharacterQuote",
@@ -220,14 +220,14 @@
         "source_type": "Sitcom",
         "character_name": "Michael Scott",
         "source": "The Office",
-        "release_date": "2007"
+        "date": "2007"
     },
     {
         "type": "FamousDocumentQuote",
         "quote": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
         "author": "Abraham Lincoln",
         "source": "The Gettysburg Address",
-        "release_date": "1863"
+        "date": "1863"
     },
     {
         "type": "DirectQuote",
@@ -393,7 +393,7 @@
         "lyrics": "Hello from the other side I must've called a thousand times To tell you I'm sorry for everything that I've done But when I call, you never seem to be home",
         "artist": "Adele",
         "title": "Hello",
-        "release_date": 2015
+        "date": 2015
     },
     {
         "type": "DirectQuote",

@@ -17,7 +17,7 @@
     "string_to_encrypt": "One does not simply walk into Mordor",
     "character_name": "Boromir",
     "source": "Lord of the Rings: The Fellowship of the Ring",
-    "release_date": "2001",
+    "date": "2001",
     "used": false
   },
   {
@@ -26,7 +26,7 @@
     "string_to_encrypt": "greater good? I am your wife! I'm the greatest good you are ever gonna get!",
     "character_name": "Frozone's Wife",
     "source": "The Incredibles",
-    "release_date": "2004",
+    "date": "2004",
     "used": false
   },
   {
@@ -35,7 +35,7 @@
     "string_to_encrypt": "I feel the need - the need for speed!",
     "character_name": "Pete Mitchell",
     "source": "Top Gun",
-    "release_date": "1986",
+    "date": "1986",
     "used": false
   },
   {
@@ -44,7 +44,7 @@
     "string_to_encrypt": "Why don't you make like a tree and get outta here",
     "character_name": "Biff Tannen",
     "source": "Back to The Future Part II",
-    "release_date": "1989",
+    "date": "1989",
     "used": false
   },
   {
@@ -53,7 +53,7 @@
     "string_to_encrypt": "I love the smell of napalm in the morning",
     "character_name": "Colonel Bill Kilgore",
     "source": "Apocalypse Now",
-    "release_date": "1979",
+    "date": "1979",
     "used": false
   },
   {
@@ -62,7 +62,7 @@
     "string_to_encrypt": "I am a nice shark, not a mindless eating machine. If I am to change this image, I must first change myself. Fish are friends, not food.",
     "character_name": "Bruce",
     "source": "Finding Nemo",
-    "release_date": "2003",
+    "date": "2003",
     "used": false
   },
   {
@@ -71,7 +71,7 @@
     "string_to_encrypt": "Fear is the path to the dark side. Fear leads to anger, anger leads to hate, hate leads to suffering.",
     "character_name": "Yoda",
     "source": "Episode I: The Phantom Menace",
-    "release_date": "1999",
+    "date": "1999",
     "used": false
   },
   {
@@ -80,7 +80,7 @@
     "string_to_encrypt": "I don't like sand. It's coarse and rough and irritating and it gets everywhere.",
     "character_name": "Anakin Skywalker",
     "source": "Episode II: Attack of The Clones",
-    "release_date": "2002",
+    "date": "2002",
     "used": false
   },
   {
@@ -89,7 +89,7 @@
     "string_to_encrypt": "If I had a nickel for every time, I'd have two nickels. Which isn't a lot, but it's weird that it happened twice",
     "character_name": "Dr. Doofenshmirtz",
     "source": "Phineas and Ferb the Movie: Across the 2nd Dimension",
-    "release_date": "2011",
+    "date": "2011",
     "used": false
   },
   {
@@ -98,7 +98,7 @@
     "string_to_encrypt": "Hello, my name is Inigo Montoya. You killed my father. Prepare to die.",
     "character_name": "Inigo Montoya",
     "source": "The Princess Bride",
-    "release_date": "1987",
+    "date": "1987",
     "used": false
   },
   {
@@ -107,7 +107,7 @@
     "string_to_encrypt": "Remember, Red, hope is a good thing, maybe the best of things, and no good thing ever dies.",
     "character_name": "Andy Dufresne",
     "source": "The Shawshank Redemption",
-    "release_date": "1994",
+    "date": "1994",
     "used": false
   },
   {
@@ -116,7 +116,7 @@
     "string_to_encrypt": "There is no Easter Bunny, There is no Tooth Fairy, and there is no queen of England.",
     "character_name": "Tighten",
     "source": "Megamind",
-    "release_date": "2010",
+    "date": "2010",
     "used": false
   },
   {
@@ -125,7 +125,7 @@
     "string_to_encrypt": "Life is like a box of chocolates... You never know what you're gonna get.",
     "character_name": "Forrest Gump",
     "source": "Forrest Gump",
-    "release_date": "1994",
+    "date": "1994",
     "used": false
   },
   {
@@ -134,7 +134,7 @@
     "string_to_encrypt": "This isn't flying, this is falling with style!",
     "character_name": "Buzz Lightyear",
     "source": "Toy Story",
-    "release_date": "1995",
+    "date": "1995",
     "used": false
   },
   {
@@ -143,7 +143,7 @@
     "string_to_encrypt": "Never gonna give you up, never gonna let you down",
     "artist": "Rick Astley",
     "title": "Never Gonna Give You Up",
-    "release_date": 1987,
+    "date": 1987,
     "used": false
   },
   {
@@ -164,7 +164,7 @@
     "string_to_encrypt": "You either die a hero, or you live long enough to see yourself become the villain.",
     "character_name": "Commissioner Gordon",
     "source": "The Dark Knight",
-    "release_date": "2008",
+    "date": "2008",
     "used": false
   },
   {
@@ -173,7 +173,7 @@
     "string_to_encrypt": "There's no place like home. There's no place like home. There's no place like home.",
     "character_name": "Dorothy Gale",
     "source": "Wizard of Oz",
-    "release_date": "1939",
+    "date": "1939",
     "used": false
   },
   {
@@ -182,7 +182,7 @@
     "string_to_encrypt": "They may take our lives, but they'll never take our freedom!",
     "character_name": "William Wilberforce",
     "source": "Braveheart",
-    "release_date": "1995",
+    "date": "1995",
     "used": false
   },
   {
@@ -197,7 +197,7 @@
     "string_to_encrypt": "You want forgiveness? Get religion.",
     "character_name": "Eddie Brock",
     "source": "SPIDER-MAN 3",
-    "release_date": "2007",
+    "date": "2007",
     "used": false
   },
   {
@@ -206,7 +206,7 @@
     "string_to_encrypt": "Good morning, and in case I don't see ya, good afternoon, good evening, and good night!",
     "character_name": "Truman Burbank",
     "source": "The Truman Show",
-    "release_date": "1998",
+    "date": "1998",
     "used": false
   },
   {
@@ -215,7 +215,7 @@
     "string_to_encrypt": "Hello from the other side I must've called a thousand times To tell you I'm sorry for everything that I've done But when I call, you never seem to be home",
     "artist": "Adele",
     "title": "Hello",
-    "release_date": "2015",
+    "date": "2015",
     "used": false
   },
   {
@@ -224,7 +224,7 @@
     "string_to_encrypt": "Toby is in HR, which technically means he works for corporate, so he's really not a part of our family. Also, he's divorced, so he's really not a part of his family either.",
     "character_name": "Michael Scott",
     "source": "The Office",
-    "release_date": "2005",
+    "date": "2005",
     "used": false
   },
   {
@@ -239,7 +239,7 @@
     "string_to_encrypt": "Not all those who wander are lost, Bilbo Baggins.",
     "character_name": "Gandalf",
     "source": "The Hobbit",
-    "release_date": "1937",
+    "date": "1937",
     "used": false
   },
   {
@@ -248,7 +248,7 @@
     "string_to_encrypt": "There are only two things I can't stand in this world. People who are intolerant of other people's cultures. and the Dutch.",
     "character_name": "Nigel Powers",
     "source": "Austin Powers in Goldmember",
-    "release_date": "2002",
+    "date": "2002",
     "used": false
   },
   {
@@ -257,7 +257,7 @@
     "string_to_encrypt": "I'm not superstitious, but I am a little stitious.",
     "character_name": "Michael Scott",
     "source": "The Office",
-    "release_date": "2007",
+    "date": "2007",
     "used": false
   },
   {
@@ -266,7 +266,7 @@
     "string_to_encrypt": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
     "source": "The Gettysburg Address",
     "author": "Abraham Lincoln",
-    "release_date": "1863",
+    "date": "1863",
     "used": false
   },
   {
@@ -467,7 +467,7 @@
     "string_to_encrypt": "Hello from the other side I must've called a thousand times To tell you I'm sorry for everything that I've done But when I call, you never seem to be home",
     "artist": "Adele",
     "title": "Hello",
-    "release_date": 2015,
+    "date": 2015,
     "used": false
   },
   {
@@ -806,7 +806,7 @@
     "string_to_encrypt": "Anyone Can Cook",
     "character_name": "Gusteau",
     "source": "Ratatouille",
-    "release_date": "2007",
+    "date": "2007",
     "used": false
   },
   {
@@ -815,7 +815,7 @@
     "string_to_encrypt": "If you are what you eat, then I only want to eat the good stuff",
     "character_name": "Remy",
     "source": "Ratatouille",
-    "release_date": "2007",
+    "date": "2007",
     "used": false
   }
 ]
