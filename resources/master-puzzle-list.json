@@ -6,12 +6,6 @@
     "used": false
   },
   {
-    "type": "GeneralPhrase",
-    "puzzle_type": "General Quote",
-    "string_to_encrypt": "What do boobs and model trains have in common? They're meant for kids but are primarily played with by grown men.",
-    "used": false
-  },
-  {
     "type": "CharacterQuote",
     "puzzle_type": "Film Quote",
     "string_to_encrypt": "One does not simply walk into Mordor",
