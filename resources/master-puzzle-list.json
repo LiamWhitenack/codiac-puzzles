@@ -1,5 +1,14 @@
 [
   {
+    "type": "SongLyrics",
+    "puzzle_type": "Song lyrics",
+    "string_to_encrypt": "Never gonna give you up, never gonna let you down",
+    "artist": "Rick Astley",
+    "title": "Never Gonna Give You Up",
+    "date": 1987,
+    "used": false
+  },
+  {
     "type": "DirectQuote",
     "string_to_encrypt": "You miss 100% of the shots you don't take",
     "author": "Wayne Gretzky",
@@ -129,15 +138,6 @@
     "character_name": "Buzz Lightyear",
     "source": "Toy Story",
     "date": "1995",
-    "used": false
-  },
-  {
-    "type": "SongLyrics",
-    "puzzle_type": "Song lyrics",
-    "string_to_encrypt": "Never gonna give you up, never gonna let you down",
-    "artist": "Rick Astley",
-    "title": "Never Gonna Give You Up",
-    "date": 1987,
     "used": false
   },
   {
