@@ -42,6 +42,7 @@ class CryptographBase(ABC):
                 if hint.letter not in seen_letters:
                     seen_letters.add(hint.letter)
                     hints.append(hint.to_json())
+        data["hints"] = hints
 
         if not to_read_from_frontend:
             res = data
