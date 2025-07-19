@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "You can get more of what you want with a kind word and a gun than you can with just a kind word.",
+  "hints": "[{'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 'c', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'k', 'type': 'GiveALetterHint'}, {'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 'j', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'c': 'mail', 'i': 'accessibility', 'h': 'fast-food', 'o': 'fitness', 'g': 'bookmark', 'd': 'battery-half', 'j': 'briefcase', 'u': 'notifications', 'a': 'color-palette', 'e': 'flask', 'w': 'bandage', 'm': 'camera', 'n': 'code-working', 'y': 'options', 'k': 'analytics', 't': 'download', 's': 'business', 'f': 'hammer', 'r': 'cube'}",
+  "other_info": "{'Author': 'Al Capone'}"
+}
