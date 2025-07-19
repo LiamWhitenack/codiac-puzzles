@@ -34,7 +34,15 @@ class CryptographBase(ABC):
     ) -> dict[str, list | str | dict[str, str]]:
         res: dict[str, Any]
         data = self.__dict__.copy()
-        data["hints"] = [hint.to_json() for hint in data["hints"]]
+        hints: list[dict[str, Any]] = []
+        hint: HintBase
+        seen_letters: set[str] = set()
+        for hint in data["hints"]:
+            if isinstance(hint, GiveALetterHint):
+                if hint.letter not in seen_letters:
+                    seen_letters.add(hint.letter)
+                    hints.append(hint.to_json())
+
         if not to_read_from_frontend:
             res = data
             res = (
