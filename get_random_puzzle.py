@@ -9,8 +9,10 @@ with open("resources/master-puzzle-list.json", "r") as read:
     with open(
         f"resources/auto-generated/{tomorrow.strftime('%Y%m%d')}.json", "w"
     ) as write:
-        json.dump(
-            parse_puzzle(choice(json.load(read))).to_json(to_read_from_frontend=True),
-            write,
-            indent=2,
-        )
+        puzzle = parse_puzzle(choice(json.load(read)))
+        data = puzzle.to_json(to_read_from_frontend=True)
+
+        if "string_to_encrypt" in data and isinstance(data["string_to_encrypt"], str):
+            data["string_to_encrypt"] = data["string_to_encrypt"].lower()
+        
+        json.dump(data, write, indent=2)
