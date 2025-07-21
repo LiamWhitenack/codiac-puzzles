@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "and on the pedestal these words appear: 'my name is ozymandias, king of kings: look on my works, ye mighty, and despair!'",
+  "hints": "[{'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'p', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'z', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'k', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'g': 'bus', 'o': 'newspaper', 'z': 'log-out', 'k': 'cash', 'p': 'musical-note', 'w': 'code', 'h': 'egg', 'a': 'compass', 'm': 'cut', 'i': 'film', 'y': 'flashlight', 'f': 'pie-chart', 's': 'color-fill', 'e': 'earth', 'd': 'mic-off', 'r': 'leaf', 't': 'chevron-back', 'l': 'fast-food', 'n': 'ear'}",
+  "other_info": "{'Author': 'Percy Bysshe Shelley'}"
+}
