@@ -12,7 +12,4 @@ with open("resources/master-puzzle-list.json", "r") as read:
         puzzle = parse_puzzle(choice(json.load(read)))
         data = puzzle.to_json(to_read_from_frontend=True)
 
-        if "string_to_encrypt" in data and isinstance(data["string_to_encrypt"], str):
-            data["string_to_encrypt"] = data["string_to_encrypt"].lower()
-        
         json.dump(data, write, indent=2)

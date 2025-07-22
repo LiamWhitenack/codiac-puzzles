@@ -71,6 +71,7 @@ class CryptographBase(ABC):
                 for k, v in data.items()
                 if v is not None
             }
+            res["string_to_encrypt"] = res["string_to_encrypt"].lower()
 
         return {k: str(v) for k, v in res.items() if v is not None}
 
