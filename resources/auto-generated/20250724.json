@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "i do not feel obliged to believe that the same god who has endowed us with sense, reason, and intellect has intended us to forgo their use.",
+  "hints": "[{'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'b', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'v', 'type': 'GiveALetterHint'}, {'letter': 'c', 'type': 'GiveALetterHint'}, {'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'h': 'partly-sunny', 'r': 'clipboard', 'm': 'color-palette', 'd': 'school', 's': 'chatbubbles', 'v': 'construct', 'e': 'battery-half', 'i': 'accessibility', 'a': 'play-back', 'l': 'contrast', 'c': 'map', 'u': 'cloud-offline', 'g': 'backspace', 't': 'sad', 'n': 'woman', 'w': 'cube', 'f': 'mic-off', 'b': 'planet', 'o': 'expand'}",
+  "other_info": "{'Author': 'Galileo Galilei'}"
+}
