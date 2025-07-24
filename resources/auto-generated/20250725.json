@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "if you chase two rabbits, you will lose them both.",
+  "hints": "[{'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'b', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 'c', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'f': 'text', 'c': 'timer', 'h': 'nuclear', 's': 'cloud', 'y': 'document', 'e': 'bicycle', 'i': 'fish', 'a': 'send', 'w': 'nutrition', 'm': 'color-fill', 'r': 'backspace', 't': 'eyedrop', 'o': 'wallet', 'u': 'male', 'l': 'terminal', 'b': 'cloud-upload'}",
+  "other_info": "{'Author': 'Native American Saying'}"
+}
