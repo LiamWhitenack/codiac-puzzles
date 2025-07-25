@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "you should hammer your iron when it is glowing hot.",
+  "hints": "[{'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'n': 'terminal', 's': 'locate', 'u': 'chevron-expand', 'w': 'nutrition', 'i': 'code-download', 't': 'chevron-collapse', 'm': 'earth', 'e': 'laptop', 'g': 'bag-add', 'h': 'chevron-back', 'y': 'list', 'l': 'american-football', 'd': 'battery-half', 'r': 'document', 'o': 'checkmark', 'a': 'exit'}",
+  "other_info": "{'Author': 'Publius Syrus'}"
+}
