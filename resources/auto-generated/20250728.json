@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "the earth is the cradle of the mind, but one cannot eternally live in a cradle.",
+  "hints": "[{'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'c', 'type': 'GiveALetterHint'}, {'letter': 'v', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'b', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'i': 'caret-down', 't': 'fast-food', 'f': 'refresh', 'm': 'code-slash', 'o': 'code', 'd': 'analytics', 'e': 'create', 'y': 'chevron-collapse', 'l': 'train', 'n': 'browsers', 'b': 'download', 'r': 'american-football', 's': 'partly-sunny', 'h': 'build', 'u': 'cube', 'c': 'search', 'v': 'calendar', 'a': 'save'}",
+  "other_info": "{'Author': 'Konstantin E. Tsiolkovsky'}"
+}
