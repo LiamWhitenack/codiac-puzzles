@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Animated Quote",
+  "string_to_encrypt": "if you are what you eat, then i only want to eat the good stuff",
+  "hints": "[{'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'a': 'bus', 'u': 'create', 'e': 'megaphone', 's': 'speedometer', 'f': 'chatbox', 'g': 'golf', 'l': 'receipt', 't': 'call', 'y': 'hand-left', 'i': 'bonfire', 'r': 'boat', 'd': 'key', 'h': 'egg', 'w': 'medkit', 'n': 'tennisball', 'o': 'paw'}",
+  "other_info": "{'Character Name': 'Remy', 'Source': 'Ratatouille', 'Date': '2007'}"
+}
