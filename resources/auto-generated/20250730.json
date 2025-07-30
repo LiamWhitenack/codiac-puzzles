@@ -1,7 +1,7 @@
 {
-  "puzzle_type": "Novel Quote",
-  "string_to_encrypt": "not all those who wander are lost, bilbo baggins.",
-  "hints": "[{'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'b', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}]",
-  "encryption_map": "{'r': 'at', 'b': 'football', 'o': 'time', 'e': 'heart', 's': 'chatbubbles', 't': 'call', 'a': 'battery-half', 'i': 'barcode', 'g': 'square', 'h': 'clipboard', 'n': 'invert-mode', 'l': 'fast-food', 'w': 'apps', 'd': 'remove'}",
-  "other_info": "{'Character Name': 'Gandalf', 'Source': 'The Hobbit', 'Date': '1937'}"
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "compound interest is the most powerful force in the universe.",
+  "hints": "[{'letter': 'p', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'f', 'type': 'GiveALetterHint'}, {'letter': 'v', 'type': 'GiveALetterHint'}, {'letter': 'u', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'c', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'t': 'snow', 'h': 'body', 'p': 'newspaper', 'l': 'stop', 'v': 'rocket', 'd': 'sync', 'e': 'fish', 'r': 'book', 'w': 'thunderstorm', 's': 'female', 'c': 'fitness', 'n': 'settings', 'm': 'infinite', 'u': 'bag-add', 'o': 'telescope', 'f': 'options', 'i': 'refresh'}",
+  "other_info": "{'Author': 'Albert Einstein'}"
 }
