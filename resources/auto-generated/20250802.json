@@ -1,0 +1,7 @@
+{
+  "puzzle_type": "Direct Quote",
+  "string_to_encrypt": "all the world's a stage, and all the men and women merely players. they have their exits and their entrances; and one man in his time plays many parts. ",
+  "hints": "[{'letter': 'd', 'type': 'GiveALetterHint'}, {'letter': 't', 'type': 'GiveALetterHint'}, {'letter': 'e', 'type': 'GiveALetterHint'}, {'letter': 's', 'type': 'GiveALetterHint'}, {'letter': 'm', 'type': 'GiveALetterHint'}, {'letter': 'y', 'type': 'GiveALetterHint'}, {'letter': 'o', 'type': 'GiveALetterHint'}, {'letter': 'n', 'type': 'GiveALetterHint'}, {'letter': 'h', 'type': 'GiveALetterHint'}, {'letter': 'l', 'type': 'GiveALetterHint'}, {'letter': 'r', 'type': 'GiveALetterHint'}, {'letter': 'i', 'type': 'GiveALetterHint'}, {'letter': 'v', 'type': 'GiveALetterHint'}, {'letter': 'w', 'type': 'GiveALetterHint'}, {'letter': 'a', 'type': 'GiveALetterHint'}, {'letter': 'p', 'type': 'GiveALetterHint'}, {'letter': 'c', 'type': 'GiveALetterHint'}, {'letter': 'g', 'type': 'GiveALetterHint'}, {'letter': 'x', 'type': 'GiveALetterHint'}]",
+  "encryption_map": "{'m': 'flash-off', 'a': 'color-fill', 's': 'flask', 'p': 'help-buoy', 'n': 'airplane', 'v': 'briefcase', 'o': 'exit', 'w': 'language', 'l': 'tennisball', 't': 'compass', 'x': 'reload', 'h': 'color-wand', 'y': 'fish', 'e': 'menu', 'c': 'pie-chart', 'i': 'radio', 'd': 'medical', 'r': 'hourglass', 'g': 'cloud-done'}",
+  "other_info": "{'Author': 'William Shakespeare'}"
+}
