@@ -9,11 +9,11 @@ from codiac_sandbox.puzzle_types import CryptographBase
 import json
 
 
-def save_puzzle(path: str, cls: type[CryptographBase], kwargs: dict[str, str]) -> None:
-    with open(path) as f:
+def save_puzzle(cls: type[CryptographBase], kwargs: dict[str, str]) -> None:
+    with open("resources/master-puzzle-list.json") as f:
         obj = cls(**kwargs)  # type: ignore[arg-type]
         add_to = json.load(f)
-    with open(path, "w") as f:
+    with open("resources/master-puzzle-list.json", "w") as f:
         json.dump(add_to + [obj.to_json()], f, indent=2)
 
 
