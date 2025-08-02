@@ -1,23 +1,20 @@
-import sys
 import inspect
 
 from PySide6.QtWidgets import (
-    QApplication,
     QDialog,
     QVBoxLayout,
     QFormLayout,
     QLabel,
     QLineEdit,
-    QPushButton,
+    QTextEdit,
     QComboBox,
+        QPushButton,
     QWidget,
-    QMessageBox,
 )
 
-from codiac_sandbox.crud.create import save_puzzle
 from codiac_sandbox.crud.create import get_puzzle_parameters
 from codiac_sandbox.utils.puzzle_classes import PUZZLE_CLASSES
-
+from PySide6.QtWidgets import QSizePolicy
 
 class AddPuzzleDialog(QDialog):
     def __init__(self):
@@ -35,7 +32,17 @@ class AddPuzzleDialog(QDialog):
         self.form_widget = QWidget()
         self.form_layout = QFormLayout()
         self.form_widget.setLayout(self.form_layout)
+
+        # Set form widget size policy to expand horizontally, fixed vertically
+        self.form_widget.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+
         self._layout.addWidget(self.form_widget)
+
+        # Add stretch below to push all widgets to top
+        self._layout.addStretch(1)
+
+        self.submit_button = QPushButton("Submit")
+        self._layout.addWidget(self.submit_button)
 
         self.type_selector.currentTextChanged.connect(self.update_form)
 
@@ -47,9 +54,21 @@ class AddPuzzleDialog(QDialog):
             if widget := item.widget():
                 widget.setParent(None)
 
-        fields = {}
+        self.fields = {}  # you used self.fields in handle_submit
+
         for name, param in get_puzzle_parameters(puzzle_type).items():
-            field = QLineEdit()
+            if name == "used":
+                continue
+            field: QLineEdit | QTextEdit
+            if name in ["quote", "lyrics", "question", "phrase"]:
+                field = QTextEdit()
+                field.setMaximumHeight(300)
+            else:
+                field = QLineEdit()
+
+            # Make fields stretch horizontally
+            field.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed) # type: ignore[attr-defined]
+
             placeholder = (
                 str(param.annotation)
                 if param.annotation != inspect.Parameter.empty
@@ -58,31 +77,5 @@ class AddPuzzleDialog(QDialog):
             if param.default != inspect.Parameter.empty:
                 placeholder += f" (default: {param.default})"
             field.setPlaceholderText(placeholder.strip())
-            fields[name] = field
+            self.fields[name] = field
             self.form_layout.addRow(QLabel(name), field)
-
-    def handle_submit(self):
-        puzzle_type = self.type_selector.currentText()
-        cls = PUZZLE_CLASSES[puzzle_type]
-        kwargs = {}
-
-        for name, param in get_puzzle_parameters(puzzle_type).items():
-            text = self.fields[name].text()
-            if not text and param.default != inspect.Parameter.empty:
-                return
-            try:
-                if "int" in str(param.annotation) and text:
-                    kwargs[name] = int(text)
-                elif "list" in str(param.annotation):
-                    kwargs[name] = [s.strip() for s in text.split(",")]
-                else:
-                    kwargs[name] = text
-            except Exception as e:
-                QMessageBox.critical(self, "Error", f"Invalid input for {name}: {e}")
-                return
-
-        try:
-            save_puzzle("resources/master-puzzle-list.json", cls, kwargs)
-            QMessageBox.information(self, "Success", "Puzzle created.")
-        except Exception as e:
-            QMessageBox.critical(self, "Error", f"Could not create puzzle:\n{e}")
