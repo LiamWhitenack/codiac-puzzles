@@ -19,20 +19,18 @@ from codiac_sandbox.gui.date_selector_widget import DateSelectorWidget
 from codiac_sandbox.utils.puzzle_classes import PUZZLE_CLASSES, from_json
 
 
-class PuzzleUI:
-    def __init__(self, parent: QWidget) -> None:
-        self.parent = parent
-        self.layout = QVBoxLayout()
-        self.parent.setLayout(self.layout)
+class PuzzleUI(QWidget):
+    def __init__(self) -> None:
+        self._layout = QVBoxLayout()
 
         self.load_quotes()
         self.build_lists()
 
-        self.layout.addWidget(self.category_combo)
+        self._layout.addWidget(self.category_combo)
 
         # Main content layout (quote list + detail view)
         self.main_content_layout = QHBoxLayout()
-        self.layout.addLayout(self.main_content_layout)
+        self._layout.addLayout(self.main_content_layout)
 
         self.main_content_layout.addWidget(self.quote_list)
         self.main_content_layout.addWidget(self.detail_scroll_area)
@@ -100,7 +98,7 @@ class PuzzleUI:
             # Set background tint on the QListWidgetItem, not the widget
             if i % 2 == 1:
                 item.setBackground(
-                    QBrush(QColor("#f0f0f0"))
+                    QBrush(QColor("#725656"))
                 )  # Light gray for alternating rows
 
             self.quote_list.addItem(item)

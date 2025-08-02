@@ -53,7 +53,6 @@ class DateSelectorWidget(QWidget):
     def on_date_changed(self, selected_date: QDate) -> None:
         if selected_date.dayOfWeek() == 7:
             self.message_label.setStyleSheet("color: red;")
-            self.message_label.setText("Warning: Closed on Sundays.")
         else:
             self.message_label.setText("")
 

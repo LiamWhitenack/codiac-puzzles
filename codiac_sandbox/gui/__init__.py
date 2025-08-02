@@ -19,14 +19,14 @@ class MainWindow(QWidget):
         # Top controls
         self.add_puzzle_button = QPushButton("Add Puzzle")
         self.add_puzzle_button.clicked.connect(self.open_add_puzzle_dialog)
-
+        
         top_controls_layout = QHBoxLayout()
         top_controls_layout.addWidget(self.add_puzzle_button)
         main_layout.addLayout(top_controls_layout)
 
         # Puzzle UI
-        self.puzzle_ui = PuzzleUI(self)
-        main_layout.addLayout(self.puzzle_ui.layout)
+        self.puzzle_ui = PuzzleUI()
+        main_layout.addLayout(self.puzzle_ui._layout)
 
         self.setLayout(main_layout)
 
