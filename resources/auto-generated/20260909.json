@@ -1,0 +1,96 @@
+{
+  "puzzle_type": "Natural Sources of Caffeine",
+  "string_to_encrypt": "^tea leaves^ ^coffee beans^ ^guarana berries^ ^kola nuts^ ^cocoa beans^",
+  "hints": [
+    {
+      "letter": "n",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "s",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "o",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "c",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "e",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "g",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "l",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "b",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "a",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "t",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "r",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "v",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "f",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "u",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "i",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "k",
+      "type": "GiveALetterHint"
+    }
+  ],
+  "encryption_map": {
+    "k": "call",
+    "i": "trash",
+    "g": "home",
+    "r": "business",
+    "v": "chevron-collapse",
+    "b": "move",
+    "u": "ribbon",
+    "n": "fitness",
+    "t": "mic-off",
+    "e": "shield",
+    "a": "wallet",
+    "f": "sad",
+    "c": "easel",
+    "l": "create",
+    "o": "options",
+    "s": "log-in"
+  },
+  "elements": [
+    "Tea Leaves",
+    "Coffee Beans",
+    "Guarana Berries",
+    "Kola Nuts",
+    "Cocoa Beans"
+  ],
+  "other_info": {}
+}
