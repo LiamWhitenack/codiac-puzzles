@@ -1,0 +1,88 @@
+{
+  "puzzle_type": "Film Quote",
+  "string_to_encrypt": "you want forgiveness? get religion.",
+  "hints": [
+    {
+      "letter": "g",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "u",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "w",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "t",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "n",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "r",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "i",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "o",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "e",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "a",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "s",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "f",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "y",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "l",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "v",
+      "type": "GiveALetterHint"
+    }
+  ],
+  "encryption_map": {
+    "a": "chevron-back",
+    "t": "help-buoy",
+    "v": "call",
+    "u": "bed",
+    "y": "flower",
+    "f": "invert-mode",
+    "g": "remove",
+    "l": "card",
+    "w": "easel",
+    "o": "cloud-download",
+    "s": "infinite",
+    "n": "planet",
+    "e": "today",
+    "r": "ice-cream",
+    "i": "cafe"
+  },
+  "other_info": {
+    "Character Name": "Eddie Brock",
+    "Source": "SPIDER-MAN 3",
+    "Date": "2007"
+  }
+}
