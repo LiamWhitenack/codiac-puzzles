@@ -1,0 +1,80 @@
+{
+  "puzzle_type": "Riddle",
+  "string_to_encrypt": "what month of the year has 28 days? all of them.",
+  "hints": [
+    {
+      "letter": "s",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "o",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "t",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "f",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "h",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "y",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "a",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "e",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "d",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "l",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "w",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "m",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "n",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "r",
+      "type": "GiveALetterHint"
+    }
+  ],
+  "encryption_map": {
+    "y": "radio",
+    "e": "document-lock",
+    "f": "school",
+    "l": "search",
+    "r": "man",
+    "a": "image",
+    "d": "trash",
+    "o": "person",
+    "h": "golf",
+    "t": "restaurant",
+    "m": "boat",
+    "s": "moon",
+    "w": "refresh",
+    "n": "flower"
+  },
+  "question_answer": "What month of the year has 28 days? All of them.",
+  "other_info": {}
+}
