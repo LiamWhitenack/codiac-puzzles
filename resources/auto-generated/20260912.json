@@ -1,0 +1,76 @@
+{
+  "puzzle_type": "Quote",
+  "string_to_encrypt": "a god from the machine",
+  "hints": [
+    {
+      "letter": "i",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "o",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "r",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "c",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "e",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "t",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "f",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "g",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "a",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "m",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "n",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "h",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "d",
+      "type": "GiveALetterHint"
+    }
+  ],
+  "encryption_map": {
+    "m": "remove",
+    "e": "location",
+    "t": "videocam",
+    "a": "wallet",
+    "n": "disc",
+    "r": "telescope",
+    "g": "bag-handle",
+    "o": "checkbox",
+    "d": "musical-note",
+    "c": "nuclear",
+    "i": "desktop",
+    "h": "star",
+    "f": "chevron-forward"
+  },
+  "other_info": {
+    "Author": "Menander"
+  }
+}
