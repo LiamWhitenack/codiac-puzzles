@@ -1,0 +1,108 @@
+{
+  "puzzle_type": "Film Quote",
+  "string_to_encrypt": "you either die a hero, or you live long enough to see yourself become the villain.",
+  "hints": [
+    {
+      "letter": "u",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "e",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "o",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "s",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "v",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "h",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "c",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "i",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "f",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "r",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "l",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "n",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "a",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "d",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "m",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "t",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "y",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "g",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "b",
+      "type": "GiveALetterHint"
+    }
+  ],
+  "encryption_map": {
+    "b": "brush",
+    "l": "trophy",
+    "i": "chatbubbles",
+    "u": "people",
+    "y": "flask",
+    "r": "leaf",
+    "v": "chevron-up",
+    "f": "code-working",
+    "s": "document",
+    "t": "funnel",
+    "d": "clipboard",
+    "o": "analytics",
+    "g": "rainy",
+    "e": "accessibility",
+    "m": "football",
+    "n": "egg",
+    "c": "code",
+    "h": "train",
+    "a": "trash"
+  },
+  "other_info": {
+    "Character Name": "Commissioner Gordon",
+    "Source": "The Dark Knight",
+    "Date": "2008"
+  }
+}
