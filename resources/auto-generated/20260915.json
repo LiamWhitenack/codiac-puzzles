@@ -1,0 +1,94 @@
+{
+  "puzzle_type": "General Quote",
+  "string_to_encrypt": "you can't direct the wind, but you can adjust your sails.",
+  "hints": [
+    {
+      "letter": "n",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "t",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "r",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "c",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "y",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "d",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "s",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "a",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "o",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "u",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "i",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "e",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "w",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "b",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "l",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "h",
+      "type": "GiveALetterHint"
+    },
+    {
+      "letter": "j",
+      "type": "GiveALetterHint"
+    }
+  ],
+  "encryption_map": {
+    "w": "mic",
+    "t": "flash-off",
+    "l": "invert-mode",
+    "e": "crop",
+    "n": "scan",
+    "d": "play-back",
+    "u": "bag-handle",
+    "c": "pause",
+    "h": "download",
+    "j": "battery-charging",
+    "a": "receipt",
+    "s": "cash",
+    "o": "card",
+    "y": "cloud-offline",
+    "i": "school",
+    "b": "notifications-off",
+    "r": "color-palette"
+  },
+  "other_info": {}
+}
